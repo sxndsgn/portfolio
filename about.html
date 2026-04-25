@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sxnd | Portfolio</title>
+    <link rel="icon" href="assets/img/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css.map">
+</head>
+
+<body>
+   <!--Contenido real de la página-->
+    <header class="mainHeader">
+        <div class="headerLeft">
+            <a href="index.html" class="name">sxnd.</a>
+        </div>
+        <div class="headerRight">
+            <nav class="mainNav">
+                <ul class="navList">
+                    <li class="navElem"><a href="projects.html">PROYECTOS</a></li>
+                    <li class="navElemSelected"><a href="about.html">SOBRE MÍ</a></li>
+                    <li class="navElem"><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <main class="aboutContent">
+            <div class="contentLeft">
+                <img src="assets/aboutImg.png" alt="Foto de Sandra">
+            </div>
+            <div class="contentRight">
+                <section class="description">
+                    <h2 class="aboutTitle">SOBRE MÍ</h2>
+                    <p class="aboutText">hola</p>   
+                </section>
+
+                <section class="aboutStickers">
+                    <img src="assets/aboutSticker1.png" alt="Sticker 1">
+                    <img src="assets/aboutSticker2.png" alt="Sticker 2">
+                    <img src="assets/aboutSticker3.png" alt="Sticker 3">
+                    <img src="assets/aboutSticker4.png" alt="Sticker 4">
+                </section>
+
+                <section class="aboutInfo">
+                    <div class="etiquetas">
+                        <p class="etiqueta">DISEÑO GRÁFICO</p>
+                        <p class="etiqueta">ILUSTRACIÓN</p>
+                        <p class="etiqueta">ANIMACIÓN</p>
+                    </div>
+                    <div class="socialmedia">
+                        <a href="">@SXNDSGN</a>
+                    </div>
+                </section>  
+            </div>
+        </main>
+    </section>
+
+   <footer class="mainFooter">
+        <div class="footerLeft">
+            <h2 class="footerTitle">CONTACTA CONMIGO</h2>
+            <section class="redessociales">
+                <a href="">
+                    <img src="assets/img/ig.png" alt="">
+                </a>
+                <a href="">
+                    <img src="assets/img/behance.png" alt="">
+                </a>
+            </section>
+        </div>
+        <div class="footerCenter">
+            <p class="footerText">¿Quieres saber más sobre mí o mis proyectos? No dudes en contactarme.</p>
+        </div>
+        <div class="footerRight">
+            <div id="contactForm" class="form">
+                <div class="formContent">
+                    <label for="mail">MAIL/NÚMERO</label>
+                    <input type="text" id="mail" name="mail" required>
+                </div>
+                <div class="formContent">
+                    <label for="name">NOMBRE</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="formContent">
+                    <label for="message">MENSAJE</label>
+                    <input type="text" id="message" name="message" required>
+                </div>
+            </div>
+            <button type="submit" class="btnForm">ENVIAR</button>
+        </div>
+   </footer>
+
+
+   <script defer src="app/main.js"></script>
+
+</body>
+</html>

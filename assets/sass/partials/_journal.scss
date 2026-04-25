@@ -1,0 +1,38 @@
+.sectionJournal{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 5rem 5rem 5rem;
+
+    .journalEvent{
+        display: flex;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 1rem;
+        .journalText{
+            flex: 1;
+            padding: 1.5rem 2rem;
+            h2{
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin: 0;
+            }
+            p{
+                font-size: 1rem;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+        img{
+            height: 25rem;
+            object-fit: cover;
+            aspect-ratio: 4/3;
+            border-radius: 0 1rem 1rem 0;
+        }
+        transition: box-shadow 0.5s ease;
+        &:hover{
+        box-shadow: 0 4px 20px $colorShadow;
+    }
+    }
+    
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "date": "22 de Marzo de 2026",
+    "title": "Visuales para la Fashiom Week de Madrid",
+    "description": "En colaboración con los alumnos de moda de la ESD, hemos hecho los visuales para los desfiles de la Fashion Week de Madrid. Hemos trabajado con Blender, Touchdesigner y Resolume, una auténtica locura, pero el resultado es increíble. ¡Y hemos visto nuestros visuales en la pantalla gigante de la pasarela de la Fashion Week! Nos ha quedado muy chulo, las cosas como son.",
+    "img": "assets/img/fweek.jpeg"
+  },
+  {
+    "date": "30 de Noviembre de 2025",
+    "title": "OFFF Festival",
+    "description": "Gracias a mi escuela hemos podido asistir al OFFF Festival, un evento de diseño y creatividad que se celebra en Sevilla. Ha sido una experiencia increíble, con charlas inspiradoras, talleres prácticos y la oportunidad de conocer a profesionales del sector. He aprendido muchísimo sobre las últimas tendencias en diseño gráfico, motion graphics y arte digital, y me he llevado un montón de ideas nuevas para mis proyectos.",
+    "img": "assets/img/offf-festival.jpg"
+  },
+  {
+    "date": "12 de Septiembre de 2025",
+    "title": "Nuevo álbum de Belén Aguilera",
+    "description": "Hoy ha salido el nuevo álbum de Belén, Anela. Es una auténtica obra de arte, y el diseño y todos los detalles del vinilo son increíbles. Ya sabemos en qué se van a basar mis próximos proyectos de aquí a unos meses.",
+    "img": "assets/img/notengofoto.png"
+  },
+  {
+    "date": "8 de Agosto de 2025",
+    "title": "Viaje a Londres",
+    "description": "Este verano he estado en Londres. Ha sido una semana muy muy intensa, pero ha sido increíble. Me he enamorado completamente de la ciudad y todo lo que he visto allí. He visitado museos, galerías de arte, tiendas de diseño... y por supuesto, he comido mucho. Londres es una ciudad que me ha inspirado muchísimo, y sin duda volveré pronto.",
+    "img": "assets/img/viaje-londres.jpg"
+  },
+  {
+    "date": "27 de Abril de 2025",
+    "title": "Libros mutantes",
+    "description": "Hoy ha venido Sara a pasar el día en Madrid y hemos estado la feria de Libros Mutantes. También hemos ido a ver la feria del libro en X-Madrid. Ha sido un dia guay.",
+    "img": "assets/img/libros-mutantes.jpg"
+  },
+  {
+    "date": "19 de Febrero de 2025",
+    "title": "Taller de Isidro Ferrer",
+    "description": "Por las jornadas de Ilustración han hecho en la escuela unos talleres, y yo me he apuntado con María al de Isidro Ferrer. Ha sido muy divertido, hemos desconectado muchísimo de los ordenadores, algo que hace mucha falta. Ojalá hicieran más cosas así.",
+    "img": "assets/img/taller-isidro.jpg"
+  },
+  {
+    "date": "29 de Noviembre de 2024",
+    "title": "Viaje a Barcelona",
+    "description": "Hemos ido de excursión a Barcelona con la escuela. Hemos visitado el Museo del Diseño, pero sin duda lo mejor ha sido estar con mis amigas paseando y descubriendo la ciudad. Ha sido un día muy intenso, pero muy divertido.",
+    "img": "assets/img/viaje-bcn.jpg"
+  }
+]

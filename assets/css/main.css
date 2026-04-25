@@ -1,0 +1,192 @@
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mainHeader .headerLeft a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0A0AED;
+  text-decoration: none;
+}
+.mainHeader .headerRight {
+  margin: 0;
+  padding: 0;
+}
+.mainHeader .headerRight .navList {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+.mainHeader .headerRight .navList .navElem a {
+  font-weight: 500;
+  color: #0A0AED;
+  text-decoration: none;
+}
+.mainHeader .headerRight .navList .navElemSelected a {
+  font-weight: 700;
+  color: #0A0AED;
+  text-decoration: none;
+}
+
+.landing {
+  height: 100vh;
+}
+.landing .encabezado {
+  float: right;
+}
+.landing .encabezado p {
+  font-weight: 500;
+  color: #0A0AED;
+  text-decoration: none;
+}
+.landing .contenidoLanding {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  margin-left: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.landing .contenidoLanding .landingName {
+  font-size: 19rem;
+  font-weight: 700;
+  color: #0A0AED;
+  text-decoration: none;
+  margin-top: -1rem;
+}
+.landing .contenidoLanding img {
+  margin-top: 4rem;
+  width: 190px;
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.mainContent .welcomeTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projectsTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.sectionProjects {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 1.5rem;
+  padding-bottom: 5rem;
+}
+.sectionProjects .projectElement {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.sectionProjects .projectElement .projectImg {
+  aspect-ratio: 3/3.5;
+  overflow: hidden;
+}
+.sectionProjects .projectElement .projectImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sectionProjects .projectElement .projectInfo {
+  margin-left: 17px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.sectionProjects .projectElement .projectInfo p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+.sectionProjects .projectElement .projectInfo h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.sectionProjects .projectElement .projectInfo .projectDate {
+  justify-self: end;
+}
+.sectionProjects .projectElement:hover .projectInfo {
+  color: #0A0AED;
+}
+
+.sectionJournal {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 5rem 5rem 5rem;
+}
+.sectionJournal .journalEvent {
+  display: flex;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.sectionJournal .journalEvent .journalText {
+  flex: 1;
+  padding: 1.5rem 2rem;
+}
+.sectionJournal .journalEvent .journalText h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+.sectionJournal .journalEvent .journalText p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+.sectionJournal .journalEvent img {
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 4/3;
+  border-radius: 0 1rem 1rem 0;
+}
+.sectionJournal .journalEvent {
+  transition: box-shadow 0.5s ease;
+}
+.sectionJournal .journalEvent:hover {
+  box-shadow: 0 4px 20px rgba(10, 10, 237, 0.4862745098);
+}
+
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #F3F4F6;
+  color: #020223;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}/*# sourceMappingURL=main.css.map */

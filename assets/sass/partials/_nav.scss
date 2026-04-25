@@ -1,0 +1,39 @@
+.mainHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .headerLeft{
+        a{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $colorPrimary;
+            text-decoration: none;
+        }
+    }
+    .headerRight{
+        margin: 0;
+        padding: 0;
+        .navList{
+            display: flex;
+            list-style: none;
+            margin-bottom: 0;
+            padding: 0;
+
+            .navElem{
+                a{
+                    font-weight: 500;
+                    color: $colorPrimary;
+                    text-decoration: none;
+                }
+            }
+            .navElemSelected{
+                a{
+                    font-weight: 700;
+                    color: $colorPrimary;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

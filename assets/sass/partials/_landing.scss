@@ -1,0 +1,47 @@
+.landing{
+    height: 100vh;
+    .encabezado{
+        float: right;
+        p{
+            font-weight: 500;
+            color: $colorPrimary;
+            text-decoration: none;
+        }
+       
+    }
+    .contenidoLanding{
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        margin-left: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .landingName{
+            font-size: 19rem;
+            font-weight: 700;
+            color: $colorPrimary;
+            text-decoration: none;
+            margin-top: -1rem;
+        }
+        img{
+            margin-top: 4rem;
+            width: 190px;
+        }
+    }
+}
+
+.mainContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+    .welcomeTitle{
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+}

@@ -1,0 +1,56 @@
+.projectsTitle{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+.sectionProjects{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 1.5rem;
+    padding-bottom: 5rem;
+
+    .projectElement{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+
+        .projectImg{
+            aspect-ratio: 3/3.5;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .projectInfo{
+            margin-left: 17px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            p{
+                font-size: .9rem;
+                font-weight: 500;
+                margin: 0;
+            }   
+            h2{
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin: 0;
+            }  
+            .projectDate{
+                justify-self: end;
+            }
+        }
+    }
+    .projectElement:hover{
+        .projectInfo{
+            color: $colorPrimary;
+        
+        }
+    }
+}
