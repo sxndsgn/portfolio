@@ -41,21 +41,7 @@ fetch('app/data/projects.json')
                     ease: 'power2.out'
                 });
             }
-        });if (window.innerWidth > 480) {
-    gsap.set('.projectElement', { opacity: 0, y: 50 });
-    ScrollTrigger.batch('.projectElement', {
-        start: 'top 85%',
-        onEnter: (elements) => {
-            gsap.to(elements, {
-                opacity: 1,
-                y: 0,
-                duration: 0.6,
-                stagger: 0.2,
-                ease: 'power2.out'
-            });
-        }
-    });
-}
+        });
     })
     .catch(error => console.error('Error al cargar el JSON:', error));
 
