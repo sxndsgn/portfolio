@@ -254,6 +254,9 @@
         grid-template-columns: 1fr;
         gap: 2rem;
         .projectElement{
+            .projectImg{
+                width: 90%;
+            }
             .projectInfo{
                 display: flex;
                 flex-direction: column;
