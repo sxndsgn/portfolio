@@ -36,3 +36,33 @@
     }
     
 }
+
+
+
+
+@media (max-width: 480px){
+    .sectionJournal {
+        padding: 1rem;
+        gap: 1.5rem;
+        
+        
+
+        .journalEvent {
+            flex-direction: column;
+            .journalText{
+            h2{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: .8rem;
+        }
+        }
+            img {
+                height: auto;
+                width: autp;
+                aspect-ratio: 16 / 9;
+                border-radius: 0 0 1rem 1rem;
+            }
+        }
+    }
+}

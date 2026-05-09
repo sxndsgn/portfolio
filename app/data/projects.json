@@ -7,26 +7,35 @@
     "title": "PENSAR ANTES DE HABLAR",
     "type": "DISEÑO EDITORIAL",
     "date": "2024",
+    "tag1": "manifiesto",
+    "tag2": "tramas",
+    "tag3": "transparencias",
     "description": "Pensar antes de hablar es un proyecto editorial que nace con la intención de reflexionar sobre el poder del lenguaje y su impacto en la sociedad. A través de una cuidadosa selección de palabras, imágenes y diseño, este proyecto busca fomentar la conciencia sobre la importancia de elegir nuestras palabras con cuidado y responsabilidad. El objetivo es inspirar a las personas a pensar antes de hablar, promoviendo un discurso más consciente, respetuoso y empático en nuestra comunicación diaria."
   },
   {
     "id": 6,
-    "img": "assets/img/notengofoto.png",
-    "img2": "assets/img/lettering.jpg",
-    "img3": "assets/img/lettering.jpg",
+    "img": "assets/img/cas-1.jpg",
+    "img2": "assets/img/notengofoto.png",
+    "img3": "assets/img/notengofoto.png",
     "title": "CASTRILLO DE RIOPISUERGA",
     "type": "BRANDING",
     "date": "2026",
+    "tag1": "escudo",
+    "tag2": "identidad",
+    "tag3": "campaña",
     "description": "Castrillo de Riopisuerga es un proyecto de branding que se centra en la creación de una identidad visual única para el pueblo de Castrillo de Riopisuerga. A través de un diseño de marca cuidadosamente elaborado, este proyecto busca capturar la esencia y la historia del pueblo, destacando sus características distintivas y promoviendo su atractivo turístico. El objetivo es crear una imagen cohesiva y memorable que represente a Castrillo de Riopisuerga como un destino encantador y auténtico."
   },
   {
     "id": 4,
     "img": "assets/img/notengofoto.png",
-    "img2": "assets/img/lettering.jpg",
-    "img3": "assets/img/lettering.jpg",
+    "img2": "assets/img/notengofoto.png",
+    "img3": "assets/img/notengofoto.png",
     "title": "DTNT",
     "type": "DISEÑO EDITORIAL",
     "date": "2025",
+    "tag1": "fanzine",
+    "tag2": "experimental",
+    "tag3": "texturas",
     "description": "DTNT es un proyecto de diseño editorial que se centra en la exploración de la tipografía y el lettering como elementos clave en la comunicación visual. A través de una cuidadosa selección de tipografías y un enfoque creativo en el diseño de letras, este proyecto busca transmitir mensajes de manera impactante y memorable, destacando la importancia del diseño tipográfico en la creación de una identidad visual única."
   },
   {
@@ -37,16 +46,22 @@
     "title": "CATALALATA",
     "type": "PACKAGING",
     "date": "2025",
+    "tag1": "alimentación",
+    "tag2": "ilustración",
+    "tag3": "color",
     "description": "Catalalata es un proyecto de packaging que se centra en la creación de un envase innovador para un producto ficticio. A través de un diseño funcional y atractivo, este proyecto busca mejorar la experiencia del usuario y destacar la calidad del producto."
   },
   {
     "id": 9,
     "img": "assets/img/notengofoto.png",
-    "img2": "assets/img/lettering.jpg",
-    "img3": "assets/img/lettering.jpg",
+    "img2": "assets/img/notengofoto.png",
+    "img3": "assets/img/notengofoto.png",
     "title": "CUESTIONAMIENTO",
     "type": "DISEÑO EDITORIAL",
     "date": "2025",
+    "tag1": "fanzine",
+    "tag2": "reflexión",
+    "tag3": "tramas",
     "description": "Cuestionamiento es un proyecto de diseño editorial que explora las preguntas fundamentales sobre la naturaleza de la realidad y la experiencia humana. A través de una combinación de imágenes provocativas y un diseño visual innovador, este proyecto invita a los espectadores a cuestionar sus suposiciones y a buscar nuevas perspectivas sobre el mundo que les rodea."
   },
   {
@@ -57,6 +72,9 @@
     "title": "CHIMPATÍA",
     "type": "BRANDING",
     "date": "2025",
+    "tag1": "identidad",
+    "tag2": "campaña",
+    "tag3": "refugio",
     "description": "Chimpatía es un proyecto de branding que se centra en la creación de una identidad visual para una marca ficticia que promueve la empatía y la conexión entre las personas. A través de un diseño de marca cálido y accesible, este proyecto busca transmitir un mensaje de inclusión y comprensión, destacando la importancia de la empatía en nuestras interacciones diarias. El objetivo es crear una imagen de marca que inspire a las personas a ser más empáticas y a construir relaciones más significativas."
   },
 {
@@ -67,6 +85,9 @@
     "title": "EL SILENCIO DEL RUIDO",
     "type": "DISEÑO EDITORIAL",
     "date": "2024",
+    "tag1": "MÚSICA",
+    "tag2": "TIPOGRAFÍA",
+    "tag3": "COLOR",
     "description": "El silencio del ruido es un proyecto editorial que explora la relación entre el sonido y el silencio en nuestra experiencia cotidiana. A través de una combinación de imágenes y texto, este proyecto invita a reflexionar sobre cómo percibimos y experimentamos el entorno sonoro, y cómo el silencio puede ser una forma de comunicación poderosa."
   },
   {
@@ -77,6 +98,9 @@
     "title": "CRICKIT",
     "type": "BRANDING",
     "date": "2025",
+    "tag1": "identidad",
+    "tag2": "packaging",
+    "tag3": "alimentación",
     "description": "CRICKIT es un proyecto de branding que se centra en la creación de una identidad visual para una marca ficticia que promueve la sostenibilidad y el cuidado del medio ambiente. A través de un diseño de marca fresco y moderno, este proyecto busca transmitir un mensaje de responsabilidad ambiental y fomentar prácticas sostenibles entre los consumidores."
   },
   {
@@ -87,16 +111,22 @@
     "title": "AQUÍ Y EN NINGÚN LADO",
     "type": "DISEÑO EDITORIAL",
     "date": "2025",
+    "tag1": "cianotipias",
+    "tag2": "experimentación",
+    "tag3": "fotografía",
     "description": "Aquí y en ningún lado es un proyecto de diseño editorial que explora la dualidad entre la presencia y la ausencia, lo tangible y lo intangible. A través de una combinación de imágenes evocadoras y un diseño visual intrigante, este proyecto invita a los espectadores a reflexionar sobre la naturaleza efímera de la existencia y la importancia de encontrar significado en el aquí y ahora, incluso cuando las cosas parecen estar en ningún lado."
   },
   {
     "id": 7,
     "img": "assets/img/notengofoto.png",
-    "img2": "assets/img/lettering.jpg",
-    "img3": "assets/img/lettering.jpg",
+    "img2": "assets/img/notengofoto.png",
+    "img3": "assets/img/notengofoto.png",
     "title": "ARCADIA, UNA BÚSQUEDA INTERIOR",
     "type": "ILUSTRACIÓN",
     "date": "2025",
+    "tag1": "álbum",
+    "tag2": "historia",
+    "tag3": "conceptual",
     "description": "Arcadia, una búsqueda interior es un proyecto de ilustración que explora el concepto de la utopía y la búsqueda de la felicidad a través de una narrativa visual. A través de una serie de ilustraciones evocadoras, este proyecto invita a los espectadores a reflexionar sobre sus propias aspiraciones y deseos, y cómo la búsqueda de la felicidad puede ser un viaje personal e introspectivo. El objetivo es inspirar a las personas a encontrar su propia versión de Arcadia, un lugar idealizado donde pueden sentirse plenos y realizados."
   },
   {
@@ -107,6 +137,9 @@
     "title": "CLOE",
     "type": "DISEÑO EDITORIAL",
     "date": "2025",
+    "tag1": "estampación",
+    "tag2": "experimentación",
+    "tag3": "texturas",
     "description": "CLOE es un proyecto de diseño editorial que se centra en la creación de una revista ficticia que aborda temas relacionados con la moda, el arte y la cultura. A través de un diseño visual atractivo y una selección cuidadosa de contenido, este proyecto busca inspirar a los lectores a explorar nuevas tendencias y perspectivas en el mundo de la moda y el arte."
   },
   {
@@ -117,6 +150,9 @@
     "title": "PASAPORTE DE BARRIO",
     "type": "DIRECCIÓN DE ARTE",
     "date": "2026",
+    "tag1": "campaña",
+    "tag2": "comercio local",
+    "tag3": "captación",
     "description": "Pasaporte de barrio es un proyecto de dirección de arte que busca celebrar la diversidad y la riqueza cultural de los barrios urbanos. A través de un diseño visual vibrante y una narrativa envolvente, este proyecto invita a los espectadores a explorar y descubrir las historias, tradiciones y características únicas de diferentes barrios, fomentando así un sentido de comunidad y pertenencia."
   }
 ]

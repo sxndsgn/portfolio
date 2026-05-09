@@ -1,0 +1,21 @@
+* {
+  cursor: none !important;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0A0AED;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease;
+
+  &.cursor--clicking {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}

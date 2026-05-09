@@ -35,45 +35,38 @@
    <main class="journalContent">
 
         <section id="journalEvents" class="sectionJournal">
-            <!--Añadir contenido con json-->
+            <!--añadir contenido con json-->
         </section>
    </main>
 
    <footer class="mainFooter">
         <div class="footerLeft">
-            <h2 class="footerTitle">CONTACTA CONMIGO</h2>
-            <section class="redessociales">
-                <a href="">
-                    <img src="assets/img/ig.png" alt="">
-                </a>
-                <a href="">
-                    <img src="assets/img/behance.png" alt="">
-                </a>
-            </section>
+            <h1 class="footerTitle">CONTACTA CONMIGO</h1>
+            
         </div>
         <div class="footerCenter">
-            <p class="footerText">¿Quieres saber más sobre mí o mis proyectos? No dudes en contactarme.</p>
+            <p class="footerText">¿Quieres saber más sobre mí o mis proyectos? <br>No dudes en contactarme.</p>
         </div>
         <div class="footerRight">
             <div id="contactForm" class="form">
                 <div class="formContent">
-                    <label for="mail">MAIL/NÚMERO</label>
-                    <input type="text" id="mail" name="mail" required>
+                    <input type="text" id="mail" name="mail" required placeholder="MAIL/NÚMERO*">
                 </div>
                 <div class="formContent">
-                    <label for="name">NOMBRE</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required placeholder="NOMBRE*">
                 </div>
                 <div class="formContent">
-                    <label for="message">MENSAJE</label>
-                    <input type="text" id="message" name="message" required>
+                    <input type="text" id="message" name="message" required placeholder="MENSAJE*">
                 </div>
             </div>
             <button type="submit" class="btnForm">ENVIAR</button>
         </div>
    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script defer src="app/main.js"></script>
+    <script defer src="app/journal.js"></script>
+    <script defer src="app/cursor.js">  </script>
 
 </body>
 </html>

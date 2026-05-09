@@ -30,7 +30,34 @@
   text-decoration: none;
 }
 
+@media (max-width: 480px) {
+  .mainHeader {
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .mainHeader .headerLeft a {
+    font-size: 0.75rem;
+  }
+  .mainHeader .headerRight .navList {
+    gap: 0;
+    flex-direction: row;
+    font-size: 0.6rem;
+  }
+}
+html {
+  scroll-snap-type: y mandatory;
+}
+
 .landing {
+  scroll-snap-align: start;
+  background-image: url("");
+  background-size: 100% auto;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 .landing .encabezado {
@@ -59,22 +86,88 @@
   margin-top: -1rem;
 }
 .landing .contenidoLanding img {
-  margin-top: 4rem;
+  margin-top: 3rem;
   width: 190px;
+  animation: girar 8s linear infinite;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .mainContent {
+  scroll-snap-align: start;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 90vh;
+  overflow: hidden;
+}
+.mainContent .fotosBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+.mainContent .fotosBackground .fotoItem {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  min-width: 0;
+  min-height: 0;
 }
 .mainContent .welcomeTitle {
+  position: relative;
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
+  z-index: 2;
+  pointer-events: none;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.7);
 }
 
+@media (max-width: 480px) {
+  .landing {
+    height: 100vh;
+  }
+  .landing .contenidoLanding {
+    gap: 0;
+  }
+  .landing .contenidoLanding .landingName {
+    font-size: 4rem;
+  }
+  .landing .contenidoLanding img {
+    width: 3rem;
+    margin-bottom: 4rem;
+    padding: 0;
+    margin-left: 0;
+  }
+  .mainContent {
+    height: 90vh;
+  }
+  .mainContent .fotosBackground {
+    display: none;
+  }
+  .mainContent .welcomeTitle {
+    font-size: 1.7rem;
+    padding: 0 1rem;
+  }
+}
 .projectsTitle {
   font-size: 2.5rem;
   font-weight: 700;
@@ -127,6 +220,242 @@
   color: #0A0AED;
 }
 
+.projectView {
+  display: none;
+  min-height: 100vh;
+  padding-top: 0;
+}
+.projectView.visible {
+  display: block;
+}
+.projectView .btnClose {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  display: block;
+  margin-left: auto;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+}
+.projectView .btnClose:hover {
+  color: #0A0AED;
+}
+.projectView .projectViewLayout {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.projectView .projectViewLayout .projectViewLeft .mainImg {
+  width: 100%;
+  height: 85vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.projectView .projectViewLayout .projectViewRight {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  height: 85vh;
+}
+.projectView .projectViewLayout .projectViewRight .projectThumbs {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.projectView .projectViewLayout .projectViewRight .projectThumbs .thumb {
+  width: 80px;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+.projectView .projectViewLayout .projectViewRight .projectThumbs .thumb:hover, .projectView .projectViewLayout .projectViewRight .projectThumbs .thumb.active {
+  opacity: 1;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewTop {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewTop .projectViewEtiquetas {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewTop .projectViewEtiquetas span {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 0.5rem;
+  text-transform: uppercase;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewTop .projectViewDets {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewTop .projectViewDets span {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewTop .projectViewDets span:first-child::after {
+  content: "|";
+  margin-left: 1rem;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewBottom {
+  display: flex;
+  flex-direction: column;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewBottom .projectViewTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewBottom .projectViewDesc {
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+.projectView .morePjs {
+  margin-top: 3rem;
+}
+.projectView .morePjs h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.projectView .morePjs .moreGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.projectView .morePjs .moreCard img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin-bottom: 0.4rem;
+  transition: opacity 0.2s ease;
+}
+.projectView .morePjs .moreCard span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.projectView .morePjs .moreCard small {
+  font-size: 0.65rem;
+}
+.projectView .morePjs .moreCard:hover img {
+  opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+  .projectsTitle {
+    font-size: 1.5rem;
+  }
+  .sectionProjects {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .sectionProjects .projectElement .projectInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .sectionProjects .projectElement .projectInfo .projectDate {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .projectView {
+    margin: 0;
+    padding: 0;
+  }
+  .projectView .btnClose {
+    margin: 0;
+    padding: 1rem;
+    padding-top: 0.5rem;
+  }
+  .projectView .projectViewLayout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .projectView .projectViewLayout .projectViewLeft {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .projectView .projectViewLayout .projectViewLeft .mainImg {
+    order: 1;
+    width: 100%;
+    height: 30rem;
+  }
+  .projectView .projectViewLayout .projectViewRight {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    gap: 0.25rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .projectView .projectViewLayout .projectViewRight .projectThumbs {
+    order: 1;
+    grid-column: 1;
+    grid-row: 1;
+    flex-direction: row;
+    margin: 0;
+  }
+  .projectView .projectViewLayout .projectViewRight .projectThumbs .thumb {
+    width: 60px;
+  }
+  .projectView .projectViewLayout .projectViewRight .projectViewInfo {
+    margin: 0;
+    padding: 0;
+    order: 2;
+    grid-row: 2;
+    height: auto;
+    gap: 2rem;
+  }
+  .projectView .projectViewLayout .projectViewBottom {
+    margin-left: 1rem;
+    padding: 0;
+    padding-bottom: 3rem;
+    gap: 1rem;
+  }
+  .projectView .projectViewLayout .projectViewBottom .projectViewTitle {
+    line-height: 2rem;
+  }
+  .morePjs {
+    display: none;
+  }
+}
 .sectionJournal {
   display: flex;
   flex-direction: column;
@@ -165,6 +494,180 @@
 }
 .sectionJournal .journalEvent:hover {
   box-shadow: 0 4px 20px rgba(10, 10, 237, 0.4862745098);
+}
+
+@media (max-width: 480px) {
+  .sectionJournal {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .sectionJournal .journalEvent {
+    flex-direction: column;
+  }
+  .sectionJournal .journalEvent .journalText h2 {
+    font-size: 1.2rem;
+  }
+  .sectionJournal .journalEvent .journalText p {
+    font-size: 0.8rem;
+  }
+  .sectionJournal .journalEvent img {
+    height: auto;
+    width: autp;
+    aspect-ratio: 16/9;
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  padding: 0;
+}
+.aboutContent .contentLeft {
+  width: 50%;
+}
+.aboutContent .contentRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10rem;
+}
+.aboutContent .contentRight .aboutInfo .etiquetas {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.aboutContent .contentRight .aboutInfo .socialmedia a {
+  color: #0A0AED;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+  .aboutContent .contentLeft {
+    width: 100%;
+  }
+  .aboutContent .contentRight {
+    width: 100%;
+    gap: 0;
+  }
+  .aboutContent .contentRight .aboutInfo {
+    padding: 0;
+    margin: 0;
+  }
+  .aboutContent .contentRight .aboutInfo .etiquetas {
+    display: none;
+  }
+}
+.mainFooter {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+.mainFooter .footerLeft .footerTitle {
+  color: #0A0AED;
+}
+.mainFooter .footerCenter {
+  margin-top: 2.5rem;
+}
+.mainFooter .footerCenter p {
+  color: #0A0AED;
+}
+.mainFooter .footerRight {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 35rem;
+}
+.mainFooter .footerRight .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mainFooter .footerRight .form .formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.mainFooter .footerRight .form .formContent input {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-bottom: #0A0AED 2px solid;
+  background-color: transparent;
+}
+.mainFooter .footerRight .form .formContent ::-moz-placeholder {
+  color: #0A0AED;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+.mainFooter .footerRight .form .formContent ::placeholder {
+  color: #0A0AED;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+.mainFooter .footerRight .btnForm {
+  text-align: right;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: #0A0AED;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+@media (max-width: 480px) {
+  .mainFooter {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+    margin: 0;
+  }
+  .mainFooter .footerLeft {
+    padding: 0;
+    font-size: 0.75rem;
+    margin-left: -1.5rem;
+    line-height: 2rem;
+  }
+  .mainFooter .footerCenter {
+    margin-top: 0;
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  .mainFooter .footerRight {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+* {
+  cursor: none !important;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0A0AED;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease;
+}
+.cursor.cursor--clicking {
+  transform: translate(-50%, -50%) scale(0.8);
 }
 
 * {
