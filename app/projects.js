@@ -29,6 +29,11 @@ fetch('app/data/projects.json')
             });
         });
 
+
+        //la animación creo que me está dando problemas en mobile, pero no he sido capaz de solucionarlo, 
+        // es como que al hacer scroll en el móvil, las cards de los proyectos se van haciendo más y más grandes,
+        //admito que no me he atrevido a tocar demasiado. 
+        //he comprobado en varios móviles diferentes y solo ha pasado en el mío, así que tampoco sé si será algo puntual
         gsap.set('.projectElement', { opacity: 0, y: 50 });
         ScrollTrigger.batch('.projectElement', {
             start: 'top 85%',
