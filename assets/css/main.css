@@ -609,6 +609,7 @@ html {
 
 @media (max-width: 480px) {
   .about .cv {
+    display: flex;
     flex-direction: column;
   }
 }
