@@ -75,3 +75,9 @@
     margin-bottom: 1rem;
    }
 }
+@media (max-width: 480px){
+    .about .cv{
+        flex-direction: column;
+    
+    }
+}
