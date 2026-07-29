@@ -321,7 +321,7 @@ html {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewTop .projectViewDets span:first-child::after {
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewTop .projectViewDets span:not(:last-child)::after {
   content: "|";
   margin-left: 1rem;
 }
@@ -342,6 +342,23 @@ html {
   margin: 0;
   padding: 0;
   line-height: 1.7;
+}
+.projectView .projectViewLayout .projectViewRight .projectViewInfo .projectViewBottom .projectViewDesc a {
+  color: #020223;
+  text-decoration: underline;
+  margin: 0;
+}
+.projectView .extraMedia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.projectView .extraMedia img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 .projectView .morePjs {
   margin-top: 3rem;
@@ -568,6 +585,28 @@ html {
     display: none;
   }
 }
+.about .cv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about .cv h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0A0AED;
+}
+.about .cv p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+}
+.about .cv .cvDet {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
 .mainFooter {
   display: flex;
   flex-direction: row;

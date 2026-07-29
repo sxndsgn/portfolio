@@ -1,8 +1,11 @@
 console.log('projects.js cargado');
-
 fetch('app/data/projects.json')
     .then(response => response.json())
     .then(data => {
+        // Guardamos los datos globalmente para poder reconstruir la vista
+        // de un proyecto si el usuario navega con el historial (popstate)
+        window.allProjectsData = data;
+
         let projectsList = document.querySelector("#projectsList");
 
         data.forEach(project => {
@@ -47,11 +50,19 @@ fetch('app/data/projects.json')
                 });
             }
         });
+
+        // Si la página se carga directamente con un hash tipo #project-5,
+        // abrimos ese proyecto de entrada (opcional, pero útil si compartes enlaces)
+        if (location.hash.startsWith('#project-')) {
+            let id = parseInt(location.hash.replace('#project-', ''));
+            let project = data.find(p => p.id === id);
+            if (project) abrirProyecto(project, data, true);
+        }
     })
     .catch(error => console.error('Error al cargar el JSON:', error));
 
 
-function abrirProyecto(project, allProjects) {
+function abrirProyecto(project, allProjects, fromPopState = false) {
     let otrosProyectos = allProjects
         .filter(p => p.id !== project.id)
         .sort(() => Math.random() - 0.5)
@@ -88,6 +99,7 @@ function abrirProyecto(project, allProjects) {
                 <div class="projectViewDets">
                     <span>${project.type}</span>
                     <span>${project.date}</span>
+                    <span>${project.durartion}</span>
                 </div>
             </div>
             <div class="projectViewBottom">
@@ -96,6 +108,12 @@ function abrirProyecto(project, allProjects) {
             </div>
             </div>
         </div>
+    </div>
+
+    <div class="extraMedia">
+        ${project.extraMedia ? project.extraMedia.map(media => `
+            <img src="${media.src}" alt="">
+        `).join('') : ''}
     </div>
 
     <div class="morePjs">
@@ -114,12 +132,16 @@ function abrirProyecto(project, allProjects) {
 
     window.scrollTo(0, 0);
 
+    // Añadimos una entrada al historial del navegador SOLO si no venimos
+    // de un popstate (si no, cada "atrás" generaría un pushState nuevo
+    // y el historial se quedaría hecho un lío)
+    if (!fromPopState) {
+        history.pushState({ projectId: project.id }, '', `#project-${project.id}`);
+    }
+
     document.addEventListener('click', function cerrar(e) {
         if (e.target.classList.contains('btnClose')) {
-            projectView.style.display = 'none';
-            projectView.innerHTML = '';
-            document.querySelector('.projectsContent').style.display = 'block';
-            document.querySelector('.mainFooter').style.display = 'flex';
+            cerrarProyecto();
             document.removeEventListener('click', cerrar);
         }
     });
@@ -140,3 +162,24 @@ function abrirProyecto(project, allProjects) {
         });
     });
 }
+
+function cerrarProyecto() {
+    let projectView = document.querySelector('#projectView');
+    projectView.style.display = 'none';
+    projectView.innerHTML = '';
+    document.querySelector('.projectsContent').style.display = 'block';
+    document.querySelector('.mainFooter').style.display = 'flex';
+}
+
+// Esto es lo que hace que el botón "atrás" del navegador funcione bien:
+// en vez de sacar al usuario de la página, cierra el popup del proyecto.
+window.addEventListener('popstate', (e) => {
+    if (e.state && e.state.projectId) {
+        // El usuario fue "adelante" (o atrás) a un estado con proyecto abierto
+        let project = window.allProjectsData?.find(p => p.id === e.state.projectId);
+        if (project) abrirProyecto(project, window.allProjectsData, true);
+    } else {
+        // No hay proyecto en el estado: volvemos al listado
+        cerrarProyecto();
+    }
+});

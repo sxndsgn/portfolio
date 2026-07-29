@@ -166,7 +166,7 @@
                         letter-spacing: 0.08em;
                         text-transform: uppercase;
 
-                        &:first-child::after {
+                        &:not(:last-child)::after {
                             content: '|';
                             margin-left: 1rem;
                         }
@@ -192,10 +192,28 @@
                     margin: 0;
                     padding: 0;
                     line-height: 1.7;
+                    a{
+                        color: $colorTextDark;
+                        text-decoration: underline;
+                        margin: 0;
+                    }
                 }
             }
         }
     }}
+
+    .extraMedia {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
 
     .morePjs {
         margin-top: 3rem;

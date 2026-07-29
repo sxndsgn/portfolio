@@ -28,6 +28,8 @@
     }
 }
 
+
+
 @media (max-width: 480px){
     .aboutContent{
         flex-direction: column;
@@ -49,4 +51,27 @@
             }
         }
     }
+}
+
+
+.about .cv{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #0A0AED;
+   }
+   p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: .25rem;
+   }
+   .cvDet{
+    font-size: .85rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+   }
 }
