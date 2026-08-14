@@ -202,6 +202,11 @@
         }
     }}
 
+    .projectVideo video {
+    width: 100%;
+    object-fit: cover; /* recorta el vídeo si no encaja la proporción, sin deformarlo */
+    }
+
     .extraMedia {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -271,6 +276,7 @@
     .sectionProjects {
         grid-template-columns: 1fr;
         gap: 2rem;
+        width: 100%;
         .projectElement{
             .projectImg{
                 width: auto;

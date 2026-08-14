@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mainHeader {
   display: flex;
   flex-direction: row;
@@ -348,6 +349,11 @@ html {
   text-decoration: underline;
   margin: 0;
 }
+.projectView .projectVideo video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* recorta el vídeo si no encaja la proporción, sin deformarlo */
+}
 .projectView .extraMedia {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -402,6 +408,7 @@ html {
   .sectionProjects {
     grid-template-columns: 1fr;
     gap: 2rem;
+    width: 100%;
   }
   .sectionProjects .projectElement .projectImg {
     width: auto;
