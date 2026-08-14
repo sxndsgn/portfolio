@@ -482,9 +482,12 @@ html {
   .projectView .projectViewLayout .projectViewBottom .projectViewTitle {
     line-height: 2rem;
   }
-  .extraMedia {
+  .projectView .extraMedia {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.5rem;
+  }
+  .projectView .extraMedia img {
+    margin: 0;
   }
   .morePjs {
     display: none;

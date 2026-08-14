@@ -359,12 +359,16 @@
 
             }
         }
+        .extraMedia {
+        grid-template-columns: 1fr;
+        gap: .5rem;
+        img{
+            margin:0
+        }
+    }
     }
 
-    .extraMedia {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+    
     
     .morePjs{
         display: none;
