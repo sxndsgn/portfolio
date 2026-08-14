@@ -68,7 +68,7 @@ html{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 0.3rem;
     .fotoItem{
         width: 100%;
         height: 100%;
@@ -118,7 +118,13 @@ html{
     .mainContent {
         height: 90vh;
         .fotosBackground {
-           display: none;
+            /* Ya no se oculta: se ve, pero con menos columnas para
+               que cada foto tenga un tamaño legible en pantallas
+               pequeñas. La animación automática (JS) se encarga
+               de encenderlas y apagarlas solas, ya que no hay hover. */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            gap: 0.15rem;
         }
         .welcomeTitle {
             font-size: 1.7rem;

@@ -23,17 +23,66 @@ fetch('app/data/fotos.json')
             container.innerHTML += fotoElem;
         });
 
-        document.querySelectorAll('.fotoItem').forEach(img => {
-            img.addEventListener('mouseenter', () => {
-                img.style.opacity = 1;
+        let fotos = document.querySelectorAll('.fotoItem');
+
+        // Detectamos si el dispositivo soporta hover de verdad
+        // (ratón), o si es táctil (móvil/tablet)
+        let esTactil = !window.matchMedia('(hover: hover)').matches;
+
+        if (!esTactil) {
+            // Desktop: comportamiento original con hover
+            fotos.forEach(img => {
+                img.addEventListener('mouseenter', () => {
+                    img.style.opacity = 1;
+                });
+                img.addEventListener('mouseleave', () => {
+                    img.style.opacity = 0;
+                });
             });
-            img.addEventListener('mouseleave', () => {
-                img.style.opacity = 0;
-            });
-        });
+        } else {
+            // Móvil/táctil: animación automática en bucle, pero
+            // controlada para que solo haya unas pocas fotos
+            // visibles a la vez (no cada una a su rollo)
+            animarFotosControlado(Array.from(fotos), 4); // máx. 4 a la vez
+        }
 
     })
     .catch(error => console.error('Error al cargar el JSON:', error));
+
+// Enciende como mucho "maxVisibles" fotos a la vez, de forma aleatoria,
+// en vez de dejar que cada foto vaya a su rollo de forma independiente
+// (eso podía hacer que muchas coincidieran encendidas al mismo tiempo)
+function animarFotosControlado(fotos, maxVisibles) {
+    let activas = new Set();
+
+    function encenderUna() {
+        if (activas.size >= maxVisibles) return;
+
+        // Elegimos una foto al azar que no esté ya encendida
+        let disponibles = fotos.filter(img => !activas.has(img));
+        if (disponibles.length === 0) return;
+
+        let img = disponibles[Math.floor(Math.random() * disponibles.length)];
+        activas.add(img);
+        img.style.opacity = 1;
+
+        // Tiempo que se queda visible (2s - 4s)
+        let duracionVisible = 2000 + Math.random() * 2000;
+        setTimeout(() => {
+            img.style.opacity = 0;
+            activas.delete(img);
+        }, duracionVisible);
+    }
+
+    // Cada cierto tiempo (1.5s - 4s), intenta encender una foto nueva
+    function ciclo() {
+        encenderUna();
+        let siguiente = 1500 + Math.random() * 2500;
+        setTimeout(ciclo, siguiente);
+    }
+
+    ciclo();
+}
 
 //texto, que aparece cuando la persona ve esa parte de la página
 let observer = new IntersectionObserver((entries) => {
@@ -178,4 +227,3 @@ let observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.querySelector('.mainContent'));
-
