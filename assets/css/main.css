@@ -418,7 +418,6 @@ html {
   .sectionProjects {
     grid-template-columns: 1fr;
     gap: 2rem;
-    width: 100%;
   }
   .sectionProjects .projectElement .projectImg {
     width: auto;
