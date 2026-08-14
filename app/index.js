@@ -43,7 +43,7 @@ fetch('app/data/fotos.json')
             // Móvil/táctil: animación automática en bucle, pero
             // controlada para que solo haya unas pocas fotos
             // visibles a la vez (no cada una a su rollo)
-            animarFotosControlado(Array.from(fotos), 4); // máx. 4 a la vez
+            animarFotosControlado(Array.from(fotos), 3); // mínimo 3 a la vez
         }
 
     })
@@ -66,19 +66,25 @@ function animarFotosControlado(fotos, maxVisibles) {
         activas.add(img);
         img.style.opacity = 1;
 
-        // Tiempo que se queda visible (2s - 4s)
-        let duracionVisible = 2000 + Math.random() * 2000;
+        // Tiempo que se queda visible (0.6s - 1.3s) — rápido
+        let duracionVisible = 600 + Math.random() * 700;
         setTimeout(() => {
             img.style.opacity = 0;
             activas.delete(img);
         }, duracionVisible);
     }
 
-    // Cada cierto tiempo (1.5s - 4s), intenta encender una foto nueva
+    // Cada poco tiempo (0.2s - 0.6s), intenta encender una foto nueva
     function ciclo() {
         encenderUna();
-        let siguiente = 1500 + Math.random() * 2500;
+        let siguiente = 200 + Math.random() * 400;
         setTimeout(ciclo, siguiente);
+    }
+
+    // Al arrancar, encendemos varias de golpe para que no tarde
+    // en llegar al mínimo de fotos visibles
+    for (let i = 0; i < maxVisibles; i++) {
+        encenderUna();
     }
 
     ciclo();

@@ -68,7 +68,7 @@ html{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 0.3rem;
+    gap: 0.1rem;
     .fotoItem{
         width: 100%;
         height: 100%;
@@ -116,7 +116,9 @@ html{
     }
 
     .mainContent {
-        height: 90vh;
+        height: 90dvh;
+        margin: 0;
+        padding: 0;
         .fotosBackground {
             /* Ya no se oculta: se ve, pero con menos columnas para
                que cada foto tenga un tamaño legible en pantallas
@@ -124,7 +126,9 @@ html{
                de encenderlas y apagarlas solas, ya que no hay hover. */
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(7, 1fr);
-            gap: 0.15rem;
+            gap: .5rem;
+            margin:0;
+            padding:0;
         }
         .welcomeTitle {
             font-size: 1.7rem;
