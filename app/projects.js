@@ -32,46 +32,6 @@ fetch('app/data/projects.json')
             });
         });
 
-        // FIX para el bug de iOS/mobile: evita que ScrollTrigger recalcule
-        // sus posiciones cada vez que la barra de direcciones de Safari
-        // aparece/desaparece durante el scroll (eso es lo que provocaba
-        // que las cards se fueran agrandando)
-        ScrollTrigger.config({ ignoreMobileResize: true });
-
-        gsap.set('.projectElement', { opacity: 0, y: 50 });
-        ScrollTrigger.batch('.projectElement', {
-            start: 'top 85%',
-            onEnter: (elements) => {
-                gsap.to(elements, {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.6,
-                    stagger: 0.2,
-                    ease: 'power2.out',
-                    force3D: false, // evita glitches de render en Safari con transforms 3D
-                    overwrite: 'auto' // si el elemento se re-triggerea, no se acumulan tweens
-                });
-            },
-            once: true // cada card anima solo una vez, nunca se re-ejecuta
-        });
-
-        // Las imágenes cambian la altura real de las cards al cargar.
-        // Si ScrollTrigger calculó las posiciones antes de eso, quedan
-        // desfasadas. Forzamos un refresh cuando todas las imágenes
-        // del listado han terminado de cargar.
-        let imgs = projectsList.querySelectorAll('img');
-        let loaded = 0;
-        imgs.forEach(img => {
-            if (img.complete) {
-                loaded++;
-            } else {
-                img.addEventListener('load', () => {
-                    loaded++;
-                    if (loaded === imgs.length) ScrollTrigger.refresh();
-                });
-            }
-        });
-        if (loaded === imgs.length) ScrollTrigger.refresh();
 
         // Si la página se carga directamente con un hash tipo #project-5,
         // abrimos ese proyecto de entrada (opcional, pero útil si compartes enlaces)
@@ -132,11 +92,7 @@ function abrirProyecto(project, allProjects, fromPopState = false) {
         </div>
     </div>
 
-    ${project.video ? `
-    <div class="projectVideo">
-        <video src="${project.video}" autoplay muted loop playsinline></video>
-    </div>
-    ` : ''}
+ 
 
     <div class="extraMedia">
         ${project.extraMedia ? project.extraMedia.map(media => `
