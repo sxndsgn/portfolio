@@ -26,7 +26,6 @@
     ]
   },
   
-  
   {
     "id": 2,
     "img": "assets/img/dtnt-1.jpg",
@@ -42,6 +41,7 @@
     "description": "DTNT es un proyecto de diseño editorial experimental inspirado en un reloj del siglo XIX diseñado por Joseph Anton Kosler, pieza que puede encontrarse en el Museo Nacional de Artes Decorativas de Madrid.<br> El proyecto parte de una pregunta clara, ¿qué es el tiempo? Lejos de ofrecer una respuesta cerrada, el fanzine es una experiencia fragmentada y caótica, donde pasado, presente y futuro no están ordenados linealmente, sino que se cruzan, se filtran y colapsan. Las capas de papel, los troqueles y las texturas construyen una lectura en la que el tiempo no se mide, se siente.<br>Este fanzine experimental fue expuesto en el Museo Nacional de Artes Decorativas de Madrid, en la exposición 'Las líneas del diseño', que tuvo lugar del 7 de mayo al 14 de junio de 2026.<br> <a href='https://youtu.be/qQ8MkYBumWs?si=NEnybX_iGAtan8xg' target='_blank'>Ver vídeo del proyecto</a>",
     "video": "assets/video/dtntvid.mp4"
   },
+
   {
     "id": 3,
     "img": "assets/img/ms-1.jpg",
@@ -54,8 +54,8 @@
     "tag1": "fanzine",
     "tag2": "experimental",
     "tag3": "diseño generativo",
-    "description": "Materia Sonora es un proyecto editorial que nace con la intención de traducir visualmente nuestra forma de vivir y relacionarnos con la música. El proyecto se divide en dos volúmenes con una edición en formato casette. En ambos fanzines se explora la música desde dos extremos, por un lado el impacto físico y emocional que tiene la mússica a nivel personal y colectivo, y por otro lado cómo yo personalmente vivo la música y me relaciono con ella.<br> El conjunto integra una tipografía técnica con gráficos generativos a partir de los datos de las canciones, todo esto combinado con texturas y fotografías. Todo esto utilizando dos tintas, una tinta negra que aporta estructura y otra tinta roja como elemento disruptivo que representa la vibración de la música y su pulso."
-    "video": "assets/video/ayenlvid.mp4"
+    "description": "Materia Sonora es un proyecto editorial que nace con la intención de traducir visualmente nuestra forma de vivir y relacionarnos con la música. El proyecto se divide en dos volúmenes con una edición en formato casette. En ambos fanzines se explora la música desde dos extremos, por un lado el impacto físico y emocional que tiene la mússica a nivel personal y colectivo, y por otro lado cómo yo personalmente vivo la música y me relaciono con ella.<br> El conjunto integra una tipografía técnica con gráficos generativos a partir de los datos de las canciones, todo esto combinado con texturas y fotografías. Todo esto utilizando dos tintas, una tinta negra que aporta estructura y otra tinta roja como elemento disruptivo que representa la vibración de la música y su pulso.",
+    "video": "",
     "extraMedia": [
       { "src": "assets/img/extra/ms-4.jpg"},
       { "src": "assets/img/extra/ms-5.jpg"},
@@ -63,7 +63,7 @@
     ]
   },
 {
-    "id": 5,
+    "id": 4,
     "img": "assets/img/esdr-1.jpg",
     "img2": "assets/img/esdr-2.jpg",
     "img3": "assets/img/esdr-3.jpg",
@@ -85,7 +85,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 5,
     "img": "assets/img/cloe-1.jpg",
     "img2": "assets/img/cloe-2.jpg",
     "img3": "assets/img/cloe-3.jpg",
@@ -126,7 +126,7 @@
   },
 
   {
-    "id": 11,
+    "id": 7,
     "img": "assets/img/lata-1.jpg",
     "img2": "assets/img/lata-2.jpg",
     "img3": "assets/img/lata-3.jpg",
@@ -141,7 +141,7 @@
   },
   
   {
-    "id": 4,
+    "id": 8,
     "img": "assets/img/chimp-1.jpg",
     "img2": "assets/img/chimp-2.jpg",
     "img3": "assets/img/chimp-3.jpg",
@@ -160,7 +160,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 9,
     "img": "assets/img/sublime-1.jpg",
     "img2": "assets/img/sublime-2.jpg",
     "img3": "assets/img/sublime-3.jpg",
@@ -176,7 +176,7 @@
   },
 
   {
-    "id": 9,
+    "id": 10,
     "img": "assets/img/pas-1.png",
     "img2": "assets/img/pas-2.png",
     "img3": "assets/img/pas-3.png",
