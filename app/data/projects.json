@@ -25,21 +25,7 @@
       
     ]
   },
-  {
-    "id": 10,
-    "img": "assets/img/sublime-1.jpg",
-    "img2": "assets/img/sublime-2.jpg",
-    "img3": "assets/img/sublime-3.jpg",
-    "title": "MIEDO AL MAR",
-    "type": "DISEÑO EDITORIAL",
-    "date": "2026",
-    "durartion": "1 semana",
-    "tag1": "campaña",
-    "tag2": "comercio local",
-    "tag3": "captación",
-    "description": "Miedo al Mar es un proyecto de diseño editorial que explora el concepto del miedo al mar a través de una narrativa visual. Se trata de un proyecto personal que surge tras distintas lecturas acerca de la categoría estética de lo sublime y la relación del ser humano con la naturaleza. Así, a través de una serie de fotografías y un juego de capas de papel translúcido, se busca transmitir la sensación de miedo y fascinación que el mar puede generar en las personas.",
-    "video": "assets/video/mamvid.mp4"
-  },
+  
   
   {
     "id": 2,
@@ -55,6 +41,26 @@
     "tag3": "texturas",
     "description": "DTNT es un proyecto de diseño editorial experimental inspirado en un reloj del siglo XIX diseñado por Joseph Anton Kosler, pieza que puede encontrarse en el Museo Nacional de Artes Decorativas de Madrid.<br> El proyecto parte de una pregunta clara, ¿qué es el tiempo? Lejos de ofrecer una respuesta cerrada, el fanzine es una experiencia fragmentada y caótica, donde pasado, presente y futuro no están ordenados linealmente, sino que se cruzan, se filtran y colapsan. Las capas de papel, los troqueles y las texturas construyen una lectura en la que el tiempo no se mide, se siente.<br>Este fanzine experimental fue expuesto en el Museo Nacional de Artes Decorativas de Madrid, en la exposición 'Las líneas del diseño', que tuvo lugar del 7 de mayo al 14 de junio de 2026.<br> <a href='https://youtu.be/qQ8MkYBumWs?si=NEnybX_iGAtan8xg' target='_blank'>Ver vídeo del proyecto</a>",
     "video": "assets/video/dtntvid.mp4"
+  },
+  {
+    "id": 3,
+    "img": "assets/img/ms-1.jpg",
+    "img2": "assets/img/ms-2.jpg",
+    "img3": "assets/img/ms-3.jpg",
+    "title": "MATERIA SONORA",
+    "type": "DISEÑO EDITORIAL",
+    "date": "2026",
+    "durartion": "2 semanas",
+    "tag1": "fanzine",
+    "tag2": "experimental",
+    "tag3": "diseño generativo",
+    "description": "Materia Sonora es un proyecto editorial que nace con la intención de traducir visualmente nuestra forma de vivir y relacionarnos con la música. El proyecto se divide en dos volúmenes con una edición en formato casette. En ambos fanzines se explora la música desde dos extremos, por un lado el impacto físico y emocional que tiene la mússica a nivel personal y colectivo, y por otro lado cómo yo personalmente vivo la música y me relaciono con ella.<br> El conjunto integra una tipografía técnica con gráficos generativos a partir de los datos de las canciones, todo esto combinado con texturas y fotografías. Todo esto utilizando dos tintas, una tinta negra que aporta estructura y otra tinta roja como elemento disruptivo que representa la vibración de la música y su pulso."
+    "video": "assets/video/ayenlvid.mp4"
+    "extraMedia": [
+      { "src": "assets/img/extra/ms-4.jpg"},
+      { "src": "assets/img/extra/ms-5.jpg"},
+      { "src": "assets/img/extra/ms-6.jpg"}
+    ]
   },
 {
     "id": 5,
@@ -118,21 +124,7 @@
     "description": "Aquí y en ningún lado es un proyecto de diseño editorial que explora la dualidad entre la presencia y la ausencia, lo tangible y lo intangible.<br>El proyecto consta de un fanzine y una serie de postales realizados con fotografías tomadas por la autora.  Las tres postales, que tienen como constante las multitudes en movimiento y la falta de definición, aún no han sido enviadas, pues el sujeto aún no sabe desde dónde habla ni a quién. El fanzine, en cambio, tiene un trasfondo más personal e íntimo, pudiendo ver en las páginas los pensamientos y sentimientos del sujeto, mostrando su vulnerabilidad.<br>A través de una combinación de imágenes evocadoras y la técnica de la cianotipia, este proyecto invita a los espectadores a reflexionar sobre la naturaleza efímera de la existencia y la importancia de encontrar significado en el aquí y ahora, incluso cuando las cosas parecen estar en ningún lado.",
     "video": "assets/video/ayenlvid.mp4"
   },
-  
-  {
-    "id": 9,
-    "img": "assets/img/pas-1.png",
-    "img2": "assets/img/pas-2.png",
-    "img3": "assets/img/pas-3.png",
-    "title": "PASAPORTE DE BARRIO",
-    "type": "DIRECCIÓN DE ARTE",
-    "date": "2026",
-    "durartion": "1 día",
-    "tag1": "campaña",
-    "tag2": "comercio local",
-    "tag3": "captación",
-    "description": "Pasaporte de barrio es un proyecto de dirección de arte que busca promover el comercio local en el barrio de Moratalaz, en Madrid. El proyecto consiste en la creación de la identidad gráfica de la campaña, con un aire fresco, desenfadado y amable, pensada para conectar y acercar el comercio local a un público joven. Para ello la campaña se centra en la creación de un pasaporte de barrio, que se entregará a los clientes de los comercios participantes, y que les permitirá acceder a descuentos y promociones exclusivas. Además, se ha diseñado un kit de bienvenida para los comercios, que incluye postales, folletos y material promocional para animar a los clientes a participar en la campaña que también se difunde a través de redes sociales y espacios efímeros."
-  },
+
   {
     "id": 11,
     "img": "assets/img/lata-1.jpg",
@@ -166,5 +158,35 @@
       { "src": "assets/img/extra/chimp-e2.jpg"},
       { "src": "assets/img/extra/chimp-e6.jpg"}
     ]
+  },
+  {
+    "id": 10,
+    "img": "assets/img/sublime-1.jpg",
+    "img2": "assets/img/sublime-2.jpg",
+    "img3": "assets/img/sublime-3.jpg",
+    "title": "MIEDO AL MAR",
+    "type": "DISEÑO EDITORIAL",
+    "date": "2026",
+    "durartion": "1 semana",
+    "tag1": "campaña",
+    "tag2": "comercio local",
+    "tag3": "captación",
+    "description": "Miedo al Mar es un proyecto de diseño editorial que explora el concepto del miedo al mar a través de una narrativa visual. Se trata de un proyecto personal que surge tras distintas lecturas acerca de la categoría estética de lo sublime y la relación del ser humano con la naturaleza. Así, a través de una serie de fotografías y un juego de capas de papel translúcido, se busca transmitir la sensación de miedo y fascinación que el mar puede generar en las personas.",
+    "video": "assets/video/mamvid.mp4"
+  },
+
+  {
+    "id": 9,
+    "img": "assets/img/pas-1.png",
+    "img2": "assets/img/pas-2.png",
+    "img3": "assets/img/pas-3.png",
+    "title": "PASAPORTE DE BARRIO",
+    "type": "DIRECCIÓN DE ARTE",
+    "date": "2026",
+    "durartion": "1 día",
+    "tag1": "campaña",
+    "tag2": "comercio local",
+    "tag3": "captación",
+    "description": "Pasaporte de barrio es un proyecto de dirección de arte que busca promover el comercio local en el barrio de Moratalaz, en Madrid. El proyecto consiste en la creación de la identidad gráfica de la campaña, con un aire fresco, desenfadado y amable, pensada para conectar y acercar el comercio local a un público joven. Para ello la campaña se centra en la creación de un pasaporte de barrio, que se entregará a los clientes de los comercios participantes, y que les permitirá acceder a descuentos y promociones exclusivas. Además, se ha diseñado un kit de bienvenida para los comercios, que incluye postales, folletos y material promocional para animar a los clientes a participar en la campaña que también se difunde a través de redes sociales y espacios efímeros."
   }
 ]
